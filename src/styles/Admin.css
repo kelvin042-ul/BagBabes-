@@ -1,0 +1,52 @@
+.access-denied {
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.access-denied h2 {
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.access-denied p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.admin-email {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    font-family: monospace;
+}
+
+.login-link,
+.home-link {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: rgb(25, 25, 25);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.login-link:hover,
+.home-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(107, 70, 193, 0.3);
+}
+
+.loading {
+    text-align: center;
+    padding: 4rem;
+    color: #666;
+    font-size: 1.2rem;
+}

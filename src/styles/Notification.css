@@ -1,0 +1,50 @@
+.notification {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(400px);
+    transition: transform 0.3s ease;
+    z-index: 2000;
+    max-width: 350px;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification-success {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+}
+
+.notification-error {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: white;
+}
+
+.notification-info {
+    background: linear-gradient(135deg, #17a2b8, #138496);
+    color: white;
+}
+
+.notification-message {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .notification {
+        left: 1rem;
+        right: 1rem;
+        max-width: none;
+        transform: translateY(400px);
+    }
+
+    .notification.show {
+        transform: translateY(0);
+    }
+}

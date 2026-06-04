@@ -1,0 +1,146 @@
+.product-detail-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.product-detail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.product-detail-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background: #f5f5f5;
+}
+
+.product-detail-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1e1e1e;
+}
+
+.product-detail-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #c9a03d;
+    margin-bottom: 1rem;
+}
+
+.product-detail-description {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.product-detail-quantity {
+    margin-bottom: 1.5rem;
+}
+
+.product-detail-quantity label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quantity-selector button {
+    width: 36px;
+    height: 36px;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.quantity-selector button:hover {
+    background: #c9a03d;
+    color: white;
+    border-color: #c9a03d;
+}
+
+.quantity-selector span {
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 40px;
+    text-align: center;
+}
+
+.product-detail-add-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #1e1e1e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 1rem;
+}
+
+.product-detail-add-btn:hover {
+    background: #c9a03d;
+}
+
+.product-detail-category {
+    font-size: 0.85rem;
+    color: #666;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.product-detail-category span {
+    font-weight: 600;
+    color: #c9a03d;
+}
+
+/* Related Products */
+.related-products {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.related-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .product-detail-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .product-detail-name {
+        font-size: 1.4rem;
+    }
+
+    .product-detail-price {
+        font-size: 1.2rem;
+    }
+
+    .product-detail-page {
+        padding: 1rem;
+    }
+}

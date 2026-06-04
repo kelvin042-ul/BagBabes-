@@ -1,0 +1,185 @@
+.home-page {
+    background: #ffffff;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Best Sellers Section */
+.best-sellers-section {
+    padding: 50px 0 30px;
+    background: #fafafa;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Products Section */
+.home-products {
+    padding: 50px 0 80px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 0.85rem;
+    color: #777777;
+}
+
+/* Products Grid - 5 per row on desktop */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+/* View All Button */
+.view-all-container {
+    text-align: center;
+}
+
+.view-all-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background: #e8e8e8;
+    border-color: #cccccc;
+    color: #1e1e1e;
+}
+
+/* Search Info */
+.search-info {
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 12px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Loading State */
+.products-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.loader {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #e0e0e0;
+    border-top-color: #888;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* No Products */
+.no-products {
+    text-align: center;
+    padding: 60px 20px;
+    color: #888;
+}
+
+/* ============================================ */
+/* Tablet: 4 per row */
+/* ============================================ */
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .best-sellers-section {
+        padding: 40px 0 20px;
+    }
+}
+
+/* ============================================ */
+/* Mobile: 2 per row */
+/* ============================================ */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .best-sellers-section {
+        padding: 30px 0 20px;
+    }
+
+    .home-products {
+        padding: 40px 0 60px;
+    }
+
+    .section-header {
+        margin-bottom: 30px;
+    }
+
+    .section-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .section-header p {
+        font-size: 0.8rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin-bottom: 32px;
+    }
+
+    .view-all-btn {
+        padding: 10px 24px;
+        font-size: 0.8rem;
+    }
+}
+
+/* ============================================ */
+/* Small phones: 2 per row (compact) */
+/* ============================================ */
+@media (max-width: 480px) {
+    .products-grid {
+        gap: 12px;
+    }
+
+    .best-sellers-section {
+        padding: 25px 0 15px;
+    }
+
+    .home-products {
+        padding: 30px 0 50px;
+    }
+}

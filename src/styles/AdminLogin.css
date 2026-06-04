@@ -1,0 +1,136 @@
+.admin-login-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+}
+
+.admin-login-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.admin-login-box:hover {
+    transform: translateY(-2px);
+}
+
+.admin-login-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.admin-login-box h2 {
+    color: #1e1e1e;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.admin-login-subtitle {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+}
+
+.admin-form-group {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.admin-form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.admin-form-group input {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1.5px solid #e8e8e8;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+.admin-form-group input:focus {
+    outline: none;
+    border-color: #1e1e1e;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.admin-form-group input::placeholder {
+    color: #bbb;
+    font-weight: 400;
+}
+
+.admin-login-btn {
+    width: 100%;
+    padding: 0.9rem;
+    background: #1e1e1e;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.admin-login-btn:hover {
+    background: #333;
+    transform: translateY(-1px);
+}
+
+.admin-login-btn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.admin-error-message {
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 0.75rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.admin-login-note {
+    margin-top: 1.5rem;
+    font-size: 0.7rem;
+    color: #999;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .admin-login-container {
+        padding: 1rem;
+    }
+
+    .admin-login-box {
+        padding: 1.8rem;
+    }
+
+    .admin-login-box h2 {
+        font-size: 1.5rem;
+    }
+}
